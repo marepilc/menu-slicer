@@ -1,0 +1,6 @@
+.vscode
+.idea
+.tmp
+node_modules
+webpack.statistics.prod.html
+webpack.statistics.dev.html

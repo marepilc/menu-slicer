@@ -1,0 +1,142 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "general": {
+            "displayName": "General",
+            "displayNameKey": "formattingGeneral",
+            "properties": {
+                "filter": {
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        },
+        "menuButton": {
+            "displayName": "Buttons",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "backColor": {
+                    "displayName": "Background Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "hoverColor": {
+                    "displayName": "Color on hover",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "selectedColor": {
+                    "displayName": "Active Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showBorder": {
+                    "displayName": "Show border",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "borderRadius": {
+                    "displayName": "Border radius",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                 "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontFamily": {
+                    "displayName": "Font",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "minWidth": {
+                    "displayName": "Minimum width",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "paddingX": {
+                    "displayName": "Horizontal padding",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "paddingY": {
+                    "displayName": "Vertical padding",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "marginX": {
+                    "displayName": "Horizontal margin",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "marginY": {
+                    "displayName": "Vertical margin",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                }
+            },
+            "conditions": [
+                {"category": {"max": 1}}
+            ]
+        }
+    ]
+}

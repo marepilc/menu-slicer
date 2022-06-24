@@ -1,0 +1,36 @@
+* {
+    cursor: default;
+}
+
+.menu-container {
+    width: 100%;
+    height: 100%;
+    ul {
+        list-style-type: none;
+        display: inline;
+        overflow: hidden;
+        li {
+            float: left;
+            cursor: pointer;
+            color: var(--color-default);
+            padding: var(--v-padding) var(--h-padding);
+            margin: var(--v-margin) var(--h-margin);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+            min-width: var(--min-width);
+        }
+        li:hover {
+            background: var(--color-back-hover)
+        }
+    }
+}
+
+.selected {
+    background: var(--color-selected);
+}
+
+.default {
+    background: var(--color-back);
+}
+
