@@ -80,6 +80,7 @@ export class Visual implements IVisual {
         style.setProperty('--color-back', this.settings.menuButton.backColor)
         style.setProperty('--color-back-hover', this.settings.menuButton.hoverColor)
         style.setProperty('--color-selected', this.settings.menuButton.selectedColor)
+        style.setProperty('--buttons-alignment', this.settings.menuButton.buttonsAlignment)
 
         if (!this.filterSet) {
             this.basicFilter = {

@@ -43,10 +43,11 @@ export class ButtonSettings {
     public showBorder: boolean = true
     public borderRadius: number = 5
     public fontSize: number = 12
-    public fontFamily: string = 'Arial, sans-serif'
+    public fontFamily: string = 'Roboto, sans-serif'
     public minWidth: number = 80
     public paddingX: number = 5
     public paddingY: number = 2
     public marginX: number = 5
     public marginY: number = 0
+    public buttonsAlignment: string = 'left'
 }

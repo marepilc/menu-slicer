@@ -118,6 +118,21 @@
                     "type": {
                         "numeric": true
                     }
+                },
+                "buttonsAlignment": {
+                    "displayName": "Alignment",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "displayName": "Left",
+                                "value": "left"
+                            },
+                            {
+                                "displayName": "Right",
+                                "value": "right"
+                            }
+                        ]
+                    }
                 }
             }
         }
